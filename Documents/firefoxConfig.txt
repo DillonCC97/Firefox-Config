@@ -40,8 +40,8 @@
     #back-button, #forward-button, #back-button *, #forward-button *, #identity-box, #urlbar-reload-button, #urlbar-stop-button, #urlbar-go-button,
     #PanelUI-button, #bookmarks-menu-button, #downloads-button, #home-button, #stylish-toolbar-button, #abp-toolbarbutton,
     #notification-popup-box, #new-tab-button, #private-browsing-indicator, #search-container, #nav-bar-overflow-button,
-    .tabs-newtab-button, .tab-close-button, .tab-close, .tab-throbber, .tab-background-start, .tab-background-end,
-    #pocket-button, #loop-button, #social-share-button, #window-controls
+    .tabs-newtab-button, .tab-throbber, .tab-background-start, .tab-background-end,
+    #pocket-button, #loop-button, #social-share-button, #window-controls/*, .tab-close-button, .tab-close*/
     /*#alltabs-button, #tabview-button, .tab-icon-image, .tab-icon-image:not([pinned])*/ { display: none !important; }
     
     * { box-sizing: border-box !important; }
@@ -59,6 +59,10 @@
     
     #navigator-toolbox { background: var(--url-background) !important; }
     #navigator-toolbox * { clip: auto !important; clip-path: none !important; }
+    
+    .tabbrowser-tab .tab-icon-image,
+    .tabbrowser-tab .tab-throbber { display:none!important; }
+
     
     #nav-bar {
         position: var(--url-position) !important; bottom: 0 !important;
